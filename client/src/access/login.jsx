@@ -6,9 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-
+  const handleLogin = () => {
     if (email.length === 0) {
       alert('Please fill in email');
     } else if (password.length === 0) {

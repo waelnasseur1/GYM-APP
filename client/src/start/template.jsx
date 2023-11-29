@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./template.css"; // Your custom styles
+import "./template.css"; 
 import axios from "axios";
 import { FaCheckCircle } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Template = ({ data, updateData }) => {
   const { _id, name, muscle, equipment, difficulty, instructions, img, done } = data;
@@ -57,9 +57,9 @@ const Template = ({ data, updateData }) => {
         <p className="card-text">Difficulty: {difficulty}</p>
         <p className="card-text">Done: {isDone && <FaCheckCircle />}</p>
         <h6 className="card-subtitle mb-2 text-muted" onClick={toggleInstructions}>{name}</h6>
+        <img src={img} className="img-fluid mb-2" alt={name} />
         {showInstructions && (
           <div>
-            <img src={img} className="img-fluid mb-2" alt={name} />
             <p className="card-text">Instructions: {instructions}</p>
           </div>
         )}

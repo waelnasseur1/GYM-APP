@@ -1,0 +1,71 @@
+:root {
+    --data-color-green: #4cd89d;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #myHeader {
+    background-color: white;
+    color: #fff;
+    box-shadow: 0 0 26px 6px #e2c8c8;
+    z-index: 111;
+    position: relative;
+  }
+  
+  
+  #myHeader .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #myHeader .list li {
+    display: inline;
+    margin-right: 50px;
+  }
+  
+  #myHeader .list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s;
+  }
+  
+  #myHeader .list li a:hover {
+    color: rgb(62, 62, 111);
+  }
+  
+  #myHeader .container .user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #myHeader .container .user button {
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  #myHeader .container .user button:first-child {
+    background-color: #17cdcd;
+  }
+  
+  #myHeader .container .user button:last-child {
+    background-color: var(--data-color-green);
+  }
+  
+  #myHeader .container .user button a {
+    text-decoration: none;
+    margin: 0;
+    color: white;
+  }
+  
